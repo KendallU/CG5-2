@@ -28,7 +28,7 @@ namespace CG5_2
 
             int firstNumb = int.Parse(firstNumber);
             int secondNumb = int.Parse(secondNumber);
-            int operation = int.Parse(operations);
+            
 
             Console.WriteLine("Choose your operation:");
             Console.WriteLine("1) Add");
@@ -40,25 +40,25 @@ namespace CG5_2
 
             if (result == "1")
             {
-                string OperationAdd();
+                OperationAdd( firstNumb, secondNumb);
               
                 return true;
             }
             else if (result == "2")
             {
-                string OperationSub();
+                OperationSub(firstNumb, secondNumb);
                
                 return true;
             }
             else if (result == "3")
             {
-                string OperationMult();
+                OperationMult(firstNumb, secondNumb);
                
                 return true;
             }
             else if (result == "4")
             {
-                string OperationDiv();
+                OperationDiv(firstNumb, secondNumb);
                
                 return true;
 
@@ -67,6 +67,8 @@ namespace CG5_2
             {
                 Console.Write("Sorry I don't understand!");
                 Console.ReadLine();
+                return false;
+
             }
 
 
