@@ -28,7 +28,7 @@ namespace CG5_2
 
             int firstNumb = int.Parse(firstNumber);
             int secondNumb = int.Parse(secondNumber);
-            string operation;
+            
             
             
 
@@ -78,6 +78,7 @@ namespace CG5_2
                 return false;
 
             }
+            
 
 
 
@@ -94,28 +95,35 @@ namespace CG5_2
 
 
         }
-        private static int OperationSub(int firstNumb, int secondNumb)
+        private static void OperationSub(int firstNumb, int secondNumb)
 
         {
             int operation;
             operation = firstNumb - secondNumb;
-            return operation;
-            
+            Console.WriteLine("The answer is," + operation);
+            Console.ReadLine();
+
+
 
 
         }
-        private static int OperationMult(int firstNumb, int secondNumb)
+        private static void OperationMult(int firstNumb, int secondNumb)
         {
-           int operation = firstNumb * secondNumb;
-            return operation;
-           
+            int operation; 
+                operation = firstNumb * secondNumb;
+            Console.WriteLine("The answer is," + operation);
+            Console.ReadLine();
+
+
 
         }
-        private static int OperationDiv(int firstNumb, int secondNumb)
+        private static void OperationDiv(int firstNumb, int secondNumb)
         {
-           int operation = firstNumb / secondNumb;
-            return operation;
-           
+            int operation;
+            operation = firstNumb / secondNumb;
+            Console.WriteLine("The answer is," + operation);
+            Console.ReadLine();
+
 
         }
         
