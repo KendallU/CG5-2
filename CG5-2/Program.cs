@@ -28,6 +28,7 @@ namespace CG5_2
 
             int firstNumb = int.Parse(firstNumber);
             int secondNumb = int.Parse(secondNumber);
+            string operation;
             
 
             Console.WriteLine("Choose your operation:");
@@ -41,25 +42,33 @@ namespace CG5_2
             if (result == "1")
             {
                 OperationAdd( firstNumb, secondNumb);
-              
+                Console.WriteLine(firstNumb + "+" + secondNumb + "=" + operation);
+                Console.ReadLine();
+
                 return true;
             }
             else if (result == "2")
             {
                 OperationSub(firstNumb, secondNumb);
-               
+                Console.WriteLine(firstNumb + "-" + secondNumb + "=" + operation);
+                Console.ReadLine();
+
                 return true;
             }
             else if (result == "3")
             {
                 OperationMult(firstNumb, secondNumb);
-               
+                Console.WriteLine(firstNumb + "*" + secondNumb + "=" + operation);
+                Console.ReadLine();
+
                 return true;
             }
             else if (result == "4")
             {
                 OperationDiv(firstNumb, secondNumb);
-               
+                Console.WriteLine(firstNumb + "/" + secondNumb + "=" + operation);
+                Console.ReadLine();
+
                 return true;
 
             }
@@ -77,10 +86,9 @@ namespace CG5_2
         private static void OperationAdd(int firstNumb, int secondNumb)
 
         {
-           int operation = firstNumb + secondNumb;
-            Console.WriteLine(firstNumb + "+" + secondNumb + "=" + operation);
-            Console.ReadLine();
-
+            
+           int operation =  firstNumb +  secondNumb;
+            
 
 
         }
@@ -88,23 +96,20 @@ namespace CG5_2
 
         {
            int operation = firstNumb - secondNumb;
-            Console.WriteLine(firstNumb + "-" + secondNumb + "=" + operation);
-            Console.ReadLine();
+            
 
 
         }
         private static void OperationMult(int firstNumb, int secondNumb)
         {
            int operation = firstNumb * secondNumb;
-            Console.WriteLine(firstNumb + "*" + secondNumb + "=" + operation);
-            Console.ReadLine();
+           
 
         }
         private static void OperationDiv(int firstNumb, int secondNumb)
         {
            int operation = firstNumb / secondNumb;
-            Console.WriteLine(firstNumb + "/" + secondNumb + "=" + operation);
-            Console.ReadLine();
+           
 
         }
         
