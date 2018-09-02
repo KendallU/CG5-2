@@ -28,7 +28,7 @@ namespace CG5_2
 
             int firstNumb = int.Parse(firstNumber);
             int secondNumb = int.Parse(secondNumber);
-            string operation;
+            int operation;
             
 
             Console.WriteLine("Choose your operation:");
@@ -41,7 +41,7 @@ namespace CG5_2
 
             if (result == "1")
             {
-                OperationAdd( firstNumb, secondNumb);
+                OperationAdd(firstNumb, secondNumb);
                 Console.WriteLine(firstNumb + "+" + secondNumb + "=" + operation);
                 Console.ReadLine();
 
@@ -83,32 +83,36 @@ namespace CG5_2
 
 
         }
-        private static void OperationAdd(int firstNumb, int secondNumb)
+        private static int OperationAdd(int firstNumb, int secondNumb)
 
         {
             
            int operation =  firstNumb +  secondNumb;
+            return operation;
             
 
 
         }
-        private static void OperationSub(int firstNumb, int secondNumb)
+        private static int OperationSub(int firstNumb, int secondNumb)
 
         {
            int operation = firstNumb - secondNumb;
+            return operation;
             
 
 
         }
-        private static void OperationMult(int firstNumb, int secondNumb)
+        private static int OperationMult(int firstNumb, int secondNumb)
         {
            int operation = firstNumb * secondNumb;
+            return operation;
            
 
         }
-        private static void OperationDiv(int firstNumb, int secondNumb)
+        private static int OperationDiv(int firstNumb, int secondNumb)
         {
            int operation = firstNumb / secondNumb;
+            return operation;
            
 
         }
