@@ -28,7 +28,8 @@ namespace CG5_2
 
             int firstNumb = int.Parse(firstNumber);
             int secondNumb = int.Parse(secondNumber);
-            int operation;
+            string operation;
+            
             
 
             Console.WriteLine("Choose your operation:");
@@ -42,15 +43,13 @@ namespace CG5_2
             if (result == "1")
             {
                 OperationAdd(firstNumb, secondNumb);
-                Console.WriteLine(firstNumb + "+" + secondNumb + "=" + operation);
-                Console.ReadLine();
-
+         
                 return true;
             }
             else if (result == "2")
             {
                 OperationSub(firstNumb, secondNumb);
-                Console.WriteLine(firstNumb + "-" + secondNumb + "=" + operation);
+                
                 Console.ReadLine();
 
                 return true;
@@ -58,7 +57,7 @@ namespace CG5_2
             else if (result == "3")
             {
                 OperationMult(firstNumb, secondNumb);
-                Console.WriteLine(firstNumb + "*" + secondNumb + "=" + operation);
+                
                 Console.ReadLine();
 
                 return true;
@@ -66,7 +65,7 @@ namespace CG5_2
             else if (result == "4")
             {
                 OperationDiv(firstNumb, secondNumb);
-                Console.WriteLine(firstNumb + "/" + secondNumb + "=" + operation);
+                
                 Console.ReadLine();
 
                 return true;
@@ -83,12 +82,14 @@ namespace CG5_2
 
 
         }
-        private static int OperationAdd(int firstNumb, int secondNumb)
+        private static void OperationAdd(int firstNumb, int secondNumb)
 
         {
             
            int operation =  firstNumb +  secondNumb;
-            return operation;
+            Console.WriteLine("The answer is," + operation);
+            Console.ReadLine();
+            
             
 
 
@@ -96,7 +97,8 @@ namespace CG5_2
         private static int OperationSub(int firstNumb, int secondNumb)
 
         {
-           int operation = firstNumb - secondNumb;
+            int operation;
+            operation = firstNumb - secondNumb;
             return operation;
             
 
