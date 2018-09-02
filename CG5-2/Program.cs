@@ -72,7 +72,7 @@ namespace CG5_2
 
 
         }
-        private static string OperationAdd(int firstNumb, int secondNumb)
+        private static void OperationAdd(int firstNumb, int secondNumb)
 
         {
            int operation = firstNumb + secondNumb;
@@ -82,7 +82,7 @@ namespace CG5_2
 
 
         }
-        private static string OperationSub(int firstNumb, int secondNumb)
+        private static void OperationSub(int firstNumb, int secondNumb)
 
         {
            int operation = firstNumb - secondNumb;
@@ -91,14 +91,14 @@ namespace CG5_2
 
 
         }
-        private static string OperationMult(int firstNumb, int secondNumb)
+        private static void OperationMult(int firstNumb, int secondNumb)
         {
            int operation = firstNumb * secondNumb;
             Console.WriteLine(firstNumb + "*" + secondNumb + "=" + operation);
             Console.ReadLine();
 
         }
-        private static string OperationDiv(int firstNumb, int secondNumb)
+        private static void OperationDiv(int firstNumb, int secondNumb)
         {
            int operation = firstNumb / secondNumb;
             Console.WriteLine(firstNumb + "/" + secondNumb + "=" + operation);
