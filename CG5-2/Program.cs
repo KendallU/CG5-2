@@ -38,7 +38,7 @@ namespace CG5_2
             Console.WriteLine("3) Multiply");
             Console.WriteLine("4) Divide");
             string result = Console.ReadLine();
-            result = Console.ReadLine();
+            
 
             if (result == "1")
             {
@@ -50,7 +50,7 @@ namespace CG5_2
             {
                 OperationSub(firstNumb, secondNumb);
                 
-                Console.ReadLine();
+                
 
                 return true;
             }
@@ -58,7 +58,7 @@ namespace CG5_2
             {
                 OperationMult(firstNumb, secondNumb);
                 
-                Console.ReadLine();
+                
 
                 return true;
             }
@@ -66,7 +66,7 @@ namespace CG5_2
             {
                 OperationDiv(firstNumb, secondNumb);
                 
-                Console.ReadLine();
+               
 
                 return true;
 
@@ -74,7 +74,7 @@ namespace CG5_2
             else
             {
                 Console.Write("Sorry I don't understand!");
-                Console.ReadLine();
+               
                 return false;
 
             }
